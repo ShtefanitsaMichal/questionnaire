@@ -18,60 +18,69 @@
      </p>
      <hr>
     </div>
-    <form method="post">
-     <div class="form-group ">
+    <form method="post" action="ankieta_www.php">
+
+     <div class="form-group" name="">
+
+
       <label class="control-label requiredField">
        1.  Czy kiedykolwiek  odwiedziłeś (-aś)   stronę internetową SMP ?
        <span class="asteriskField">
         *
        </span>
       </label>
+
       <div class="">
-       <div class="radio">
+       <div class="radio" name="radio1">
         <label class="radio">
-         <input name="radio" type="radio" value="TAK"/>
+         <input name="visit" type="radio" value="TAK"/>
          TAK
         </label>
        </div>
        <div class="radio">
         <label class="radio">
-         <input name="radio" type="radio" value="NIE"/>
+         <input name="visit" type="radio" value="NIE"/>
          NIE
         </label>
        </div>
       </div>
      </div>
+
+
      <div class="form-group ">
       <label class="control-label ">
-       2.  Jak często korzystasz ze strony internetowej SMP ?
+      2. Jak często korzystasz ze strony internetowej SMP ?
       </label>
       <div class="">
        <div class="radio">
         <label class="radio">
-         <input name="radio1" type="radio" value=" 1. codziennie "/>
+         <input name="frequency" type="radio" value="codziennie "/>
          1. codziennie
         </label>
        </div>
        <div class="radio">
         <label class="radio">
-         <input name="radio1" type="radio" value="2. kilka razy w tygodniu "/>
+         <input name="frequency" type="radio" value="kilka razy w tygodniu "/>
          2. kilka razy w tygodniu
         </label>
        </div>
        <div class="radio">
         <label class="radio">
-         <input name="radio1" type="radio" value="3. kilka razy w miesiącu"/>
+         <input name="frequency" type="radio" value="kilka razy w miesiącu"/>
          3. kilka razy w miesiącu
         </label>
        </div>
        <div class="radio">
         <label class="radio">
-         <input name="radio1" type="radio" value="4. rzadziej / okazjonalnie"/>
+         <input name="frequency" type="radio" value="rzadziej / okazjonalnie"/>
          4. rzadziej / okazjonalnie
         </label>
        </div>
       </div>
      </div>
+
+
+
      <div class="form-group ">
       <label class="control-label ">
        3.  Jak og&oacute;lnie oceniasz stronę internetową SMP  ?
@@ -79,42 +88,45 @@
       <div class="">
        <div class="radio">
         <label class="radio">
-         <input name="radio3" type="radio" value="1. Nie mam zdania."/>
+         <input name="rating" type="radio" value="Nie mam zdania."/>
          1. Nie mam zdania.
         </label>
        </div>
        <div class="radio">
         <label class="radio">
-         <input name="radio3" type="radio" value="2. Strona nie spełnia moich oczekiwań."/>
+         <input name="rating" type="radio" value="Strona nie spełnia moich oczekiwań."/>
          2. Strona nie spełnia moich oczekiwań.
         </label>
        </div>
        <div class="radio">
         <label class="radio">
-         <input name="radio3" type="radio" value="3. Na stronie należałoby wprowadzić wiele zmian."/>
+         <input name="rating" type="radio" value="Na stronie należałoby wprowadzić wiele zmian."/>
          3. Na stronie należałoby wprowadzić wiele zmian.
         </label>
        </div>
        <div class="radio">
         <label class="radio">
-         <input name="radio3" type="radio" value="4. Strona podoba mi się, jednak powinno być więcej informacji. "/>
+         <input name="rating" type="radio" value="Strona podoba mi się, jednak powinno być więcej informacji. "/>
          4. Strona podoba mi się, jednak powinno być więcej informacji.
         </label>
        </div>
        <div class="radio">
         <label class="radio">
-         <input name="radio3" type="radio" value="5. Treść na stronie jest zadowalająca."/>
+         <input name="rating" type="radio" value="Treść na stronie jest zadowalająca."/>
          5. Treść na stronie jest zadowalająca.
         </label>
        </div>
        <div class="radio">
         <label class="radio">
-         <input name="radio3" type="radio" value="6. Strona zawiera istotne informacje. Nie wymaga zmian."/>
+         <input name="rating" type="radio" value="Strona zawiera istotne informacje. Nie wymaga zmian."/>
          6. Strona zawiera istotne informacje. Nie wymaga zmian.
         </label>
        </div>
       </div>
      </div>
+
+
+
      <div class="form-group ">
       <label class="control-label ">
        4. Jak oceniasz atrakcyjność strony SMP pod względem grafiki i animacji (banery,  ikony, ikonografiki, zmieniający się kolor, kształt ) ?
@@ -122,36 +134,39 @@
       <div class="">
        <div class="radio">
         <label class="radio">
-         <input name="radio4" type="radio" value="1. Zdecydowanie atrakcyjna"/>
+         <input name="attractiveness" type="radio" value="Zdecydowanie atrakcyjna"/>
          1. Zdecydowanie atrakcyjna
         </label>
        </div>
        <div class="radio">
         <label class="radio">
-         <input name="radio4" type="radio" value="2. Raczej atrakcyjna "/>
+         <input name="attractiveness" type="radio" value="Raczej atrakcyjna "/>
          2. Raczej atrakcyjna
         </label>
        </div>
        <div class="radio">
         <label class="radio">
-         <input name="radio4" type="radio" value="3. Raczej nieatrakcyjna "/>
+         <input name="attractiveness" type="radio" value="Raczej nieatrakcyjna "/>
          3. Raczej nieatrakcyjna
         </label>
        </div>
        <div class="radio">
         <label class="radio">
-         <input name="radio4" type="radio" value="4. Zdecydowanie nieatrakcyjna"/>
+         <input name="attractiveness" type="radio" value="Zdecydowanie nieatrakcyjna"/>
          4. Zdecydowanie nieatrakcyjna
         </label>
        </div>
        <div class="radio">
         <label class="radio">
-         <input name="radio4" type="radio" value="5. Nie mam zdania "/>
+         <input name="attractiveness" type="radio" value="Nie mam zdania "/>
          5. Nie mam zdania
         </label>
        </div>
       </div>
      </div>
+
+
+
      <div class="form-group ">
       <label class="control-label ">
        5.  Czy odpowiada Ci kolorystyka strony?
@@ -159,36 +174,39 @@
       <div class="">
        <div class="radio">
         <label class="radio">
-         <input name="radio5" type="radio" value="1. Zdecydowanie tak "/>
+         <input name="color" type="radio" value="Zdecydowanie tak "/>
          1. Zdecydowanie tak
         </label>
        </div>
        <div class="radio">
         <label class="radio">
-         <input name="radio5" type="radio" value="2. Raczej tak "/>
+         <input name="color" type="radio" value="Raczej tak "/>
          2. Raczej tak
         </label>
        </div>
        <div class="radio">
         <label class="radio">
-         <input name="radio5" type="radio" value="3.  Raczej nie"/>
-         3.  Raczej nie
+         <input name="color" type="radio" value="Raczej nie"/>
+         3. Raczej nie
         </label>
        </div>
        <div class="radio">
         <label class="radio">
-         <input name="radio5" type="radio" value="4. Zdecydowanie nie"/>
+         <input name="color" type="radio" value="Zdecydowanie nie"/>
          4. Zdecydowanie nie
         </label>
        </div>
        <div class="radio">
         <label class="radio">
-         <input name="radio5" type="radio" value="5. Nie mam zdania "/>
+         <input name="color" type="radio" value="Nie mam zdania "/>
          5. Nie mam zdania
         </label>
        </div>
       </div>
      </div>
+
+
+
      <div class="form-group ">
       <label class="control-label ">
        6.  Czy udało Ci się odnaleźć informacje, kt&oacute;rych szukałeś ( -aś) ?
@@ -196,30 +214,39 @@
       <div class="">
        <div class="radio">
         <label class="radio">
-         <input name="radio6" type="radio" value="Tak"/>
+         <input name="easy_to_find_info" type="radio" value="Tak"/>
          Tak
         </label>
        </div>
        <div class="radio">
         <label class="radio">
-         <input name="radio6" type="radio" value="Nie"/>
+         <input name="easy_to_find_info" type="radio" value="Nie"/>
          Nie
         </label>
        </div>
       </div>
      </div>
+
+
+
      <div class="form-group ">
       <label class="control-label " for="textarea">
        7. Jakie treści / informacje Twoim zdaniem powinny być zamieszczone na stronie internetowej SMP  ?
       </label>
-      <textarea class="form-control" cols="40" id="textarea" name="textarea" rows="10"></textarea>
+      <textarea class="form-control" cols="40" id="textarea" name="ness_info" rows="10"></textarea>
      </div>
+
+
+
      <div class="form-group ">
       <label class="control-label " for="textarea1">
        8.  Jakiego rodzaju treści,  informacji, wydarzeń  powinno być więcej na stronie internetowej SMP ?
       </label>
-      <textarea class="form-control" cols="40" id="textarea1" name="textarea1" rows="10"></textarea>
+      <textarea class="form-control" cols="40" id="textarea1" name="info_type" rows="10"></textarea>
      </div>
+
+
+
      <div class="form-group ">
       <label class="control-label ">
        9. Jak oceniasz  spos&oacute;b nawigacji  na stronie SMP Poruszanie się po stronie www SMP jest:
@@ -227,31 +254,31 @@
       <div class="">
        <div class="radio">
         <label class="radio">
-         <input name="radio7" type="radio" value="1. bardzo łatwe i intuicyjne"/>
+         <input name="nawigation" type="radio" value="bardzo łatwe i intuicyjne"/>
          1. bardzo łatwe i intuicyjne
         </label>
        </div>
        <div class="radio">
         <label class="radio">
-         <input name="radio7" type="radio" value="2. łatwe "/>
+         <input name="nawigation" type="radio" value="łatwe "/>
          2. łatwe
         </label>
        </div>
        <div class="radio">
         <label class="radio">
-         <input name="radio7" type="radio" value="3.  dość trudne "/>
+         <input name="nawigation" type="radio" value="dość trudne "/>
          3.  dość trudne
         </label>
        </div>
        <div class="radio">
         <label class="radio">
-         <input name="radio7" type="radio" value="4. trudne "/>
+         <input name="nawigation" type="radio" value="trudne "/>
          4. trudne
         </label>
        </div>
        <div class="radio">
         <label class="radio">
-         <input name="radio7" type="radio" value="5. Nie mam zdania "/>
+         <input name="nawigation" type="radio" value="Nie mam zdania "/>
          5. Nie mam zdania
         </label>
        </div>
@@ -265,52 +292,28 @@
      </div>
      <div class="form-group ">
       <label class="control-label ">
-       11. Czy uważasz, że strona internetowa SMP wymaga modernizacji  w celu zwiększenia atrakcyjności i 
+       10. Czy uważasz, że strona internetowa SMP wymaga modernizacji  w celu zwiększenia atrakcyjności i 
      funkcjonalności, uzasadnij odpowiedź
       </label>
       <div class="">
        <div class="radio">
         <label class="radio">
-         <input name="radio8" type="radio" value="Tak"/>
+         <input name="need_update" type="radio" value="Tak"/>
          Tak
         </label>
        </div>
        <div class="radio">
         <label class="radio">
-         <input name="radio8" type="radio" value="Nie"/>
+         <input name="need_update" type="radio" value="Nie"/>
          Nie
         </label>
        </div>
       </div>
      </div>
-     <div class="form-group ">
-      <label class="control-label ">
-       Select a Choice
-      </label>
-      <div class="">
-       <div class="radio">
-        <label class="radio">
-         <input name="radio2" type="radio" value="First Choice"/>
-         First Choice
-        </label>
-       </div>
-       <div class="radio">
-        <label class="radio">
-         <input name="radio2" type="radio" value="Second Choice"/>
-         Second Choice
-        </label>
-       </div>
-       <div class="radio">
-        <label class="radio">
-         <input name="radio2" type="radio" value="Third Choice"/>
-         Third Choice
-        </label>
-       </div>
-      </div>
-     </div>
+    
      <div class="form-group ">
       <label class="control-label requiredField">
-       10 . Jakie media  społecznościowe, Twoim zdaniem, powinny być wykorzystywane na stronie / wspierac funkcjonowanie strony internetowej ?
+       11 . Jakie media  społecznościowe, Twoim zdaniem, powinny być wykorzystywane na stronie / wspierac funkcjonowanie strony internetowej ?
        <span class="asteriskField">
         *
        </span>
@@ -318,44 +321,44 @@
       <div class=" ">
        <div class="checkbox">
         <label class="checkbox">
-         <input name="checkbox" type="checkbox" value="1. Facebook"/>
+         <input name="ness_social_meadia" type="checkbox" value="Facebook"/>
          1. Facebook
         </label>
        </div>
        <div class="checkbox">
         <label class="checkbox">
-         <input name="checkbox" type="checkbox" value="2. Google"/>
+         <input name="ness_social_meadia" type="checkbox" value="Google"/>
          2. Google
         </label>
        </div>
        <div class="checkbox">
         <label class="checkbox">
-         <input name="checkbox" type="checkbox" value="3  Youtube"/>
-         3  Youtube
+         <input name="ness_social_meadia" type="checkbox" value="Youtube"/>
+         3.  Youtube
         </label>
        </div>
        <div class="checkbox">
         <label class="checkbox">
-         <input name="checkbox" type="checkbox" value="4. Twitter"/>
+         <input name="ness_social_meadia" type="checkbox" value="Twitter"/>
          4. Twitter
         </label>
        </div>
        <div class="checkbox">
         <label class="checkbox">
-         <input name="checkbox" type="checkbox" value="5. LInkedIn"/>
+         <input name="ness_social_meadia" type="checkbox" value="LInkedIn"/>
          5. LInkedIn
         </label>
        </div>
        <div class="checkbox">
         <label class="checkbox">
-         <input name="checkbox" type="checkbox" value="6. Inne "/>
+         <input name="ness_social_meadia" type="checkbox" value="Inne "/>
          6. Inne
         </label>
        </div>
       </div>
      </div>
      <div class="form-group ">
-      <input class="form-control" id="text" name="text" placeholder="jakie ?" type="text"/>
+      <input class="form-control" id="text" name="optional_social_media" placeholder="jakie ?" type="text"/>
      </div>
      <div class="form-group ">
       <label class="control-label requiredField">
@@ -367,13 +370,13 @@
       <div class="">
        <div class="radio">
         <label class="radio">
-         <input name="radio9" type="radio" value="Kobieta"/>
+         <input name="sex" type="radio" value="Kobieta"/>
          Kobieta
         </label>
        </div>
        <div class="radio">
         <label class="radio">
-         <input name="radio9" type="radio" value="Mężczyzna "/>
+         <input name="sex" type="radio" value="Mężczyzna "/>
          Mężczyzna
         </label>
        </div>
@@ -386,31 +389,31 @@
       <div class="">
        <div class="radio">
         <label class="radio">
-         <input name="radio10" type="radio" value="18-25 lat"/>
+         <input name="age" type="radio" value="18-25 lat"/>
          18-25 lat
         </label>
        </div>
        <div class="radio">
         <label class="radio">
-         <input name="radio10" type="radio" value="26-35"/>
+         <input name="age" type="radio" value="26-35"/>
          26-35
         </label>
        </div>
        <div class="radio">
         <label class="radio">
-         <input name="radio10" type="radio" value="36-45"/>
+         <input name="age" type="radio" value="36-45"/>
          36-45
         </label>
        </div>
        <div class="radio">
         <label class="radio">
-         <input name="radio10" type="radio" value="45-55"/>
+         <input name="age" type="radio" value="45-55"/>
          45-55
         </label>
        </div>
        <div class="radio">
         <label class="radio">
-         <input name="radio10" type="radio" value="Powyżej "/>
+         <input name="age" type="radio" value="Powyżej "/>
          Powyżej
         </label>
        </div>
@@ -423,13 +426,13 @@
       <div class="">
        <div class="radio">
         <label class="radio">
-         <input name="radio11" type="radio" value="pracownik bezpośrednio produkcyjny ( direct)"/>
+         <input name="employee_type" type="radio" value="direct"/>
          pracownik bezpośrednio produkcyjny ( direct)
         </label>
        </div>
        <div class="radio">
         <label class="radio">
-         <input name="radio11" type="radio" value="pracownik  pośrednio produkcyjny( indirect)"/>
+         <input name="employee_type" type="radio" value="indirect"/>
          pracownik  pośrednio produkcyjny( indirect)
         </label>
        </div>
@@ -437,8 +440,8 @@
      </div>
      <div class="form-group">
       <div>
-       <button class="btn btn-success " name="submit" type="submit">
-        Submit
+       <button class="btn btn-success " name="send" type="submit">
+        Wyślij 
        </button>
       </div>
      </div>
