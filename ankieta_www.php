@@ -18,7 +18,7 @@
      </p>
      <hr>
     </div>
-    <form method="post" action="ankieta_www.php">
+    <form method="post" action="new_data.php">
 
      <div class="form-group" name="">
 
@@ -321,37 +321,40 @@
       <div class=" ">
        <div class="checkbox">
         <label class="checkbox">
-         <input name="ness_social_meadia" type="checkbox" value="Facebook"/>
+         <input name="ness_social_media[fb]" type="checkbox" value="Facebook"/>
          1. Facebook
         </label>
        </div>
        <div class="checkbox">
         <label class="checkbox">
-         <input name="ness_social_meadia" type="checkbox" value="Google"/>
+         <input name="ness_social_media[google]" type="checkbox" value="Google"/>
          2. Google
         </label>
        </div>
        <div class="checkbox">
         <label class="checkbox">
-         <input name="ness_social_meadia" type="checkbox" value="Youtube"/>
+         <input name="ness_social_media[youtube]" type="checkbox" value="Youtube"/>
          3.  Youtube
         </label>
        </div>
        <div class="checkbox">
         <label class="checkbox">
-         <input name="ness_social_meadia" type="checkbox" value="Twitter"/>
+         <input name="ness_social_media[twitter]" type="checkbox" value="Twitter"/>
          4. Twitter
         </label>
        </div>
        <div class="checkbox">
         <label class="checkbox">
-         <input name="ness_social_meadia" type="checkbox" value="LInkedIn"/>
+         <input name="ness_social_media[LinkedIN]" type="checkbox" value="LinkedIn"/>
          5. LInkedIn
         </label>
        </div>
        <div class="checkbox">
         <label class="checkbox">
-         <input name="ness_social_meadia" type="checkbox" value="Inne "/>
+         <input name="ness_social_media[other]" type="checkbox" value="Inne"/>
+
+        
+
          6. Inne
         </label>
        </div>
