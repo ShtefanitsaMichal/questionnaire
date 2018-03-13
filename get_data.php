@@ -1,3 +1,4 @@
+<?php require "head.php" ?>
 <?php require "db_connection.php" ?>
 <?php 
 		try {
@@ -56,28 +57,28 @@
 		  <table class="table table-hover table table-bordered" id="myTable">
 		    <thead>
 		    <tr style="cursor: pointer;" class="info">
-				<th onclick="sortTable(0)">1</th> 
-				<th onclick="sortTable(1)" class="col">1</th> 
-				<th onclick="sortTable(2)">1</th> 
-				<th onclick="sortTable(3)">1</th> 
-				<th onclick="sortTable(4)" style="min-width: 300px;">1</th> 
-				<th onclick="sortTable(5)" style="min-width: 300px;">1</th> 
-				<th onclick="sortTable(6)" style="min-width: 300px;">1</th> 
-				<th onclick="sortTable(7)">1</th> 
-				<th onclick="sortTable(8)">1</th> 
-				<th onclick="sortTable(9)">1</th> 
-				<th onclick="sortTable(10)" style="min-width: 200px;">1</th> 
-				<th onclick="sortTable(11)" style="min-width: 300px;">1</th> 
-				<th onclick="sortTable(12)">1</th> 
-				<th onclick="sortTable(13)">1</th> 
-				<th onclick="sortTable(14)">1</th> 
-				<th onclick="sortTable(15)">1</th> 
-				<th onclick="sortTable(16)" style="min-width: 100px;">1</th>
-				<th onclick="sortTable(17)">1</th> 
-				<th onclick="sortTable(18)">1</th> 
-				<th onclick="sortTable(19)">1</th> 
-				<th onclick="sortTable(20)">1</th>
-				<th onclick="sortTable(21)">1</th> 
+				<th onclick="sortTable(0)">id</th> 
+				<th onclick="sortTable(1)">visit</th> 
+				<th onclick="sortTable(2)">frequency</th> 
+				<th onclick="sortTable(3)">rating</th> 
+				<th onclick="sortTable(4)">attractiveness</th> 
+				<th onclick="sortTable(5)">page_rating</th> 
+				<th onclick="sortTable(6)">color</th> 
+				<th onclick="sortTable(7)">easy_to_find_info</th> 
+				<th onclick="sortTable(8)">ness_info</th> 
+				<th onclick="sortTable(9)">info_type</th> 
+				<th onclick="sortTable(10)">nawigation</th> 
+				<th onclick="sortTable(11)">need_update</th> 
+				<th onclick="sortTable(12)">need_update_text</th> 
+				<th onclick="sortTable(13)">subject</th> 
+				<th onclick="sortTable(14)">ness_social_media</th> 
+				<th onclick="sortTable(15)">optional_social_media</th> 
+				<th onclick="sortTable(16)">sex</th>
+				<th onclick="sortTable(17)">age</th> 
+				<th onclick="sortTable(18)">employee_type</th> 
+			
+				<th onclick="sortTable(20)">date</th>
+			
 		      </tr>
 		    </thead>
     
@@ -87,6 +88,7 @@
 
 						while($row = $get_all_data->fetch(PDO::FETCH_ASSOC)) 
 						{   //Creates a loop to loop through results
+						
 						echo "<tr>	
 									<td>" . $row['id'] . "</td> 
 									<td>" . $row['visit'] . "</td> 
@@ -99,16 +101,15 @@
 									<td>" . $row['ness_info'] . "</td> 
 									<td>" . $row['info_type'] . "</td> 
 									<td>" . $row['nawigation'] . "</td> 
+									<td>" . $row['need_update'] . "</td> 
+									<td>" . $row['need_update_text'] . "</td> 
 									<td>" . $row['subject'] . "</td> 
 									<td>" . $row['ness_social_media'] . "</td> 
 									<td>" . $row['optional_social_media'] . "</td> 
 									<td>" . $row['sex'] . "</td> 
 									<td>" . $row['age'] . "</td> 
-									<td>" . $row['employee_type'] . "</td>
-									<td>" . $row['ip'] . "</td>
-									<td>" . $row['hostname'] . "</td>
-									<td>" . $row['date'] . "</td>
-									<td>" . $row['date_normal'] . "</td>		
+									<td>" . $row['employee_type'] . "</td>																			
+									<td>" . $row['date'] . "</td>		
 							  </tr>";  //$row['index'] the index here is a field name
 						} 
 						//odbc_close(); //Make sure to close out the database connection
@@ -120,4 +121,70 @@
 	</div>
 
    
-			
+				<script>
+					function sortTable(n) {
+					  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+					  table = document.getElementById("myTable");
+					  switching = true;
+					  //Set the sorting direction to ascending:
+					  dir = "asc"; 
+					  /*Make a loop that will continue until
+					  no switching has been done:*/
+					  while (switching) {
+					    //start by saying: no switching is done:
+					    switching = false;
+					    rows = table.getElementsByTagName("TR");
+					    /*Loop through all table rows (except the
+					    first, which contains table headers):*/
+					    for (i = 1; i < (rows.length - 1); i++) {
+					      //start by saying there should be no switching:
+					      shouldSwitch = false;
+					      /*Get the two elements you want to compare,
+					      one from current row and one from the next:*/
+					      x = rows[i].getElementsByTagName("TD")[n];
+					      y = rows[i + 1].getElementsByTagName("TD")[n];
+					      /*check if the two rows should switch place,
+					      based on the direction, asc or desc:*/
+					      if (dir == "asc") {
+					        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+					          //if so, mark as a switch and break the loop:
+					          shouldSwitch= true;
+					          break;
+					        }
+					      } else if (dir == "desc") {
+					        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+					          //if so, mark as a switch and break the loop:
+					          shouldSwitch= true;
+					          break;
+					        }
+					      }
+					    }
+					    if (shouldSwitch) {
+					      /*If a switch has been marked, make the switch
+					      and mark that a switch has been done:*/
+					      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+					      switching = true;
+					      //Each time a switch is done, increase this count by 1:
+					      switchcount ++;      
+					    } else {
+					      /*If no switching has been done AND the direction is "asc",
+					      set the direction to "desc" and run the while loop again.*/
+					      if (switchcount == 0 && dir == "asc") {
+					        dir = "desc";
+					        switching = true;
+					      }
+					    }
+					  }
+					}
+				</script>
+
+				<script>
+					$(document).ready(function(){
+					  $("#myInput").on("keyup", function() {
+					    var value = $(this).val().toLowerCase();
+					    $("#myTable tr").filter(function() {
+					      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+					    });
+					  });
+					});
+				</script>

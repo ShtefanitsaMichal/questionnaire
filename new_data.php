@@ -40,6 +40,8 @@
                                . "`ness_info`, "
                                . "`info_type`, "                
                                . "`nawigation`, "
+                               . "`need_update`, "
+                               . "`need_update_text`, "
                                . "`subject`, "
                                . "`ness_social_media`, "
                                . "`optional_social_media`, "
@@ -59,7 +61,9 @@
                                           '$_POST[easy_to_find_info]', 
                                           '$_POST[ness_info]', 
                                           '$_POST[info_type]', 
-                                          '$_POST[nawigation]', 
+                                          '$_POST[nawigation]',
+                                          '$_POST[need_update]',
+                                          '$_POST[need_update_text]', 
                                           '$_POST[subject]', 
                                           '$ns', 
                                           '$_POST[optional_social_media]', 
