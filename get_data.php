@@ -1,5 +1,5 @@
-<?php require "head.php" ?>
-<?php require "db_connection.php" ?>
+<?php require_once "head.php" ?>
+<?php require_once "db_connection.php" ?>
 <?php 
 		try {
 			$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password );	

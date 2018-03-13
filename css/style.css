@@ -1,11 +1,12 @@
 body {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  background-color: rgb(255, 255, 255);  
+  padding-top: 5px;
+  padding-bottom: 5px;
   position: relative;
 }
 
 body::before {
-  background: url(../media/bg.jpg) no-repeat center center fixed;
+  background: url(../media/bg2.jpg) no-repeat center center fixed;
   content: '';
   z-index: -1;
   width: 100%;
@@ -15,10 +16,11 @@ body::before {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  -webkit-filter: blur(30px);
-  -moz-filter: blur(30px);
-  -o-filter: blur(30px);
-  -ms-filter: blur(30px);
-  filter: blur(30px);
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -o-filter: blur(0px);
+  -ms-filter: blur(0px);
+  filter: blur(0px);
+  opacity: 0.1;
   
 }

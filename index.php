@@ -12,11 +12,11 @@
      <h4 >
       BADANIE  SATYSFAKCJI UŻYTKOWNIKÓW  STRONY  INTERNETOWEJ SMP  
     </h4> 
-      <p>
-      www.sandensmp.pl
-      </p>
-    
-     <hr>
+      <h4>
+      <a href="http://www.sandensmp.pl" target="_blanc"> www.sandensmp.pl </a>
+    </h4>
+
+    <hr>
     </div>
     <form method="post" action="new_data.php">
 
@@ -362,8 +362,7 @@
         <label class="checkbox">
          <input name="ness_social_media[]" type="checkbox" value="Inne"/>
 
-        
-
+      
          6. Inne
         </label>
        </div>
