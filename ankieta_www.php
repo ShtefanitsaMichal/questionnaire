@@ -1,5 +1,6 @@
 <!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
-<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso12.css" /> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" /> 
+<link rel="stylesheet" href="css/style.css" /> 
 
 <!-- Inline CSS based on choices in "Settings" tab -->
 <style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: black}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: #ffffff !important;} .asteriskField{color: red;}</style>
@@ -7,21 +8,24 @@
 <!-- HTML Form (wrapped in a .bootstrap-iso div) -->
 <div class="bootstrap-iso">
  <div class="container-fluid">
-  <div class="row">
+  <div class="row" position="center">
+    <!-- odstęp -->
+   <div class="col-md-3 col-sm-3 col-xs-0"></div> 
+   <!--koniec odstępu -->
    <div class="col-md-6 col-sm-6 col-xs-12">
-    <div class="formden_header">
-     <h2>
+    <div class="formden_header" align="center">
+     <h4 >
       BADANIE  SATYSFAKCJI UŻYTKOWNIKÓW  STRONY  INTERNETOWEJ SMP  
-     </h2>
-     <p>
-     www.sandensmp.pl
-     </p>
+    </h4> 
+      <p>
+      www.sandensmp.pl
+      </p>
+    
      <hr>
     </div>
     <form method="post" action="new_data.php">
 
      <div class="form-group" name="">
-
 
       <label class="control-label requiredField">
        1.  Czy kiedykolwiek  odwiedziłeś (-aś)   stronę internetową SMP ?
@@ -31,13 +35,13 @@
       </label>
 
       <div class="">
-       <div class="radio" name="radio1">
+       <div class="form-check form-check-inline" name="radio1">
         <label class="radio">
          <input name="visit" type="radio" value="TAK"/>
          TAK
         </label>
        </div>
-       <div class="radio">
+       <div class="form-check form-check-inline">
         <label class="radio">
          <input name="visit" type="radio" value="NIE"/>
          NIE
@@ -46,6 +50,7 @@
       </div>
      </div>
 
+    <hr>
 
      <div class="form-group ">
       <label class="control-label ">
@@ -54,7 +59,7 @@
       <div class="">
        <div class="radio">
         <label class="radio">
-         <input name="frequency" type="radio" value="codziennie "/>
+         <input name="frequency" type="radio" value="codziennie " />
          1. codziennie
         </label>
        </div>
@@ -79,7 +84,7 @@
       </div>
      </div>
 
-
+    <hr>
 
      <div class="form-group ">
       <label class="control-label ">
@@ -125,7 +130,7 @@
       </div>
      </div>
 
-
+      <hr>
 
      <div class="form-group ">
       <label class="control-label ">
@@ -165,7 +170,7 @@
       </div>
      </div>
 
-
+    <hr>
 
      <div class="form-group ">
       <label class="control-label ">
@@ -205,20 +210,20 @@
       </div>
      </div>
 
-
+    <hr>
 
      <div class="form-group ">
       <label class="control-label ">
        6.  Czy udało Ci się odnaleźć informacje, kt&oacute;rych szukałeś ( -aś) ?
       </label>
       <div class="">
-       <div class="radio">
+       <div class="form-check form-check-inline">
         <label class="radio">
          <input name="easy_to_find_info" type="radio" value="Tak"/>
          Tak
         </label>
        </div>
-       <div class="radio">
+       <div class="form-check form-check-inline">
         <label class="radio">
          <input name="easy_to_find_info" type="radio" value="Nie"/>
          Nie
@@ -227,25 +232,25 @@
       </div>
      </div>
 
-
+    <hr>
 
      <div class="form-group ">
       <label class="control-label " for="textarea">
        7. Jakie treści / informacje Twoim zdaniem powinny być zamieszczone na stronie internetowej SMP  ?
       </label>
-      <textarea class="form-control" cols="40" id="textarea" name="ness_info" rows="10"></textarea>
+      <textarea class="form-control" cols="10" id="textarea" name="ness_info" rows="5"></textarea>
      </div>
 
-
+    <hr>
 
      <div class="form-group ">
       <label class="control-label " for="textarea1">
        8.  Jakiego rodzaju treści,  informacji, wydarzeń  powinno być więcej na stronie internetowej SMP ?
       </label>
-      <textarea class="form-control" cols="40" id="textarea1" name="info_type" rows="10"></textarea>
+      <textarea class="form-control" cols="10" id="textarea1" name="info_type" rows="5"></textarea>
      </div>
 
-
+    <hr>
 
      <div class="form-group ">
       <label class="control-label ">
@@ -290,19 +295,23 @@
       </label>
       <input class="form-control" id="subject" name="subject" type="text"/>
      </div>
+
+    <hr>
+
      <div class="form-group ">
       <label class="control-label ">
+
        10. Czy uważasz, że strona internetowa SMP wymaga modernizacji  w celu zwiększenia atrakcyjności i 
      funkcjonalności, uzasadnij odpowiedź
       </label>
       <div class="">
-       <div class="radio">
+       <div class="form-check form-check-inline">
         <label class="radio">
          <input name="need_update" type="radio" value="Tak"/>
          Tak
         </label>
        </div>
-       <div class="radio">
+       <div class="form-check form-check-inline">
         <label class="radio">
          <input name="need_update" type="radio" value="Nie"/>
          Nie
@@ -310,6 +319,9 @@
        </div>
       </div>
      </div>
+
+
+     <hr>
     
      <div class="form-group ">
       <label class="control-label requiredField">
@@ -363,6 +375,9 @@
      <div class="form-group ">
       <input class="form-control" id="text" name="optional_social_media" placeholder="jakie ?" type="text"/>
      </div>
+
+      <hr>
+
      <div class="form-group ">
       <label class="control-label requiredField">
        12. Płeć
@@ -385,6 +400,9 @@
        </div>
       </div>
      </div>
+
+      <hr>
+
      <div class="form-group ">
       <label class="control-label ">
        13. Prosimy o podanie swojego przedziału wiekowego.
@@ -392,26 +410,26 @@
       <div class="">
        <div class="radio">
         <label class="radio">
-         <input name="age" type="radio" value="18-25 lat"/>
+         <input name="age" type="radio" value="18-25"/>
          18-25 lat
         </label>
        </div>
        <div class="radio">
         <label class="radio">
          <input name="age" type="radio" value="26-35"/>
-         26-35
+         26-35 lat
         </label>
        </div>
        <div class="radio">
         <label class="radio">
          <input name="age" type="radio" value="36-45"/>
-         36-45
+         36-45 lat
         </label>
        </div>
        <div class="radio">
         <label class="radio">
          <input name="age" type="radio" value="45-55"/>
-         45-55
+         45-55 lat
         </label>
        </div>
        <div class="radio">
@@ -422,6 +440,10 @@
        </div>
       </div>
      </div>
+
+    <hr>
+
+
      <div class="form-group ">
       <label class="control-label ">
        14.  Charakter pracy:
@@ -441,9 +463,12 @@
        </div>
       </div>
      </div>
+
+      <hr>
+
      <div class="form-group">
       <div>
-       <button class="btn btn-success " name="send" type="submit">
+       <button class="btn btn-primary " name="send" type="submit">
         Wyślij 
        </button>
       </div>

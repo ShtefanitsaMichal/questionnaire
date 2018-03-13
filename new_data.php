@@ -1,24 +1,22 @@
+<?php require "head.php" ?>
 <?php require "get_ip.php" ?>
 <?php require "db_connection.php" ?>
 <?php 
         if (isset($_POST['send'])) 
         {
-            if (!empty($_POST['ness_social_media'])) {
-                $checked_count = count($_POST['ness_social_media']);
-                echo "you have selected following " .$checked_count. " option(s): <br/>";
-                foreach ($_POST['ness_social_media'] as $selected) {
-                    echo '<p>' .$selected. '</p>'; 
-                }echo "<br/><b>Note :</b> <span>Similarily, You Can Also Perform CRUD Operations using These Selected Values.</span>";
-            } else {
-                echo "prosze wybrać opcję";
-            }
-            
-            var_dump ($_POST['ness_social_media[]']); 
-        }
-        var_dump ($social_media); 
-        ?>
+            if (!empty($_POST['ness_social_media'])) 
+                {
+                  
+                    foreach ($_POST['ness_social_media'] as $selected) 
+                    {
+                      
+                    }
+                } 
+    $ness_social = $_POST['ness_social_media'];
+    $ns = json_encode($ness_social,JSON_FORCE_OBJECT);             
+       
+       
 
-<?php
     $timestamp = time();
     $hostname = gethostbyaddr($ip);
     $time = date('Y-m-d H:i:s');
@@ -59,7 +57,7 @@
                                           '$_POST[info_type]', 
                                           '$_POST[nawigation]', 
                                           '$_POST[subject]', 
-                                          '$_POST[ness_social_media]', 
+                                          '$ns', 
                                           '$_POST[optional_social_media]', 
                                           '$_POST[sex]', 
                                           '$_POST[age]',
@@ -71,11 +69,7 @@
                             // use exec() because no results are returned
                             $conn->exec($sql);
                             ?>
-                              <div class="container">
-                                <div class="alert alert-success">
-                                 <strong>Success!</strong> <?php echo "New record created successfully"; ?>
-                                </div>
-                              </div>
+                            <?php require "messages.php"?>
                             <?php
                             
                             }
@@ -85,14 +79,13 @@
                             }
 
                         $conn = null;
+    }
 
  ?>
-
+<!--
  <script type="text/javascript">
-  window.setTimeout(function(){
-
+  window.setTimeout(function(){     
         // Move to a new location or you can do something else
-        window.location.href = "#index.php";
-
+        window.location.href = "http://system";
     }, 3000);// czasprzejsćia na strone głowną 
-</script>
+</script> -->
