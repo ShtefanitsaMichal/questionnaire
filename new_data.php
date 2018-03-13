@@ -12,6 +12,10 @@
                       
                     }
                 } 
+                    else 
+                {
+                    $_POST['ness_social_media'] = "empty" ;
+                }
     $ness_social = $_POST['ness_social_media'];
     $ns = json_encode($ness_social,JSON_FORCE_OBJECT);             
        
@@ -82,10 +86,10 @@
     }
 
  ?>
-<!--
+
  <script type="text/javascript">
   window.setTimeout(function(){     
         // Move to a new location or you can do something else
         window.location.href = "http://system";
     }, 3000);// czasprzejsćia na strone głowną 
-</script> -->
+</script> 

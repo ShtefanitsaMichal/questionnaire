@@ -1,9 +1,4 @@
-<!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" /> 
-<link rel="stylesheet" href="css/style.css" /> 
-
-<!-- Inline CSS based on choices in "Settings" tab -->
-<style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: black}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: #ffffff !important;} .asteriskField{color: red;}</style>
+<?php require "head.php" ?>
 
 <!-- HTML Form (wrapped in a .bootstrap-iso div) -->
 <div class="bootstrap-iso">
@@ -36,14 +31,14 @@
 
       <div class="">
        <div class="form-check form-check-inline" name="radio1">
-        <label class="radio">
-         <input name="visit" type="radio" value="TAK"/>
+        <label class="radio-inline">
+         <input class="radio-inline"name="visit" type="radio" value="TAK"/ required>
          TAK
         </label>
        </div>
        <div class="form-check form-check-inline">
-        <label class="radio">
-         <input name="visit" type="radio" value="NIE"/>
+        <label class="radio-inline">
+         <input clas="radio-inline" name="visit" type="radio" value="NIE" required/>
          NIE
         </label>
        </div>
@@ -59,7 +54,7 @@
       <div class="">
        <div class="radio">
         <label class="radio">
-         <input name="frequency" type="radio" value="codziennie " />
+         <input name="frequency" type="radio" value="codziennie " required/>
          1. codziennie
         </label>
        </div>
@@ -93,7 +88,7 @@
       <div class="">
        <div class="radio">
         <label class="radio">
-         <input name="rating" type="radio" value="Nie mam zdania."/>
+         <input name="rating" type="radio" value="Nie mam zdania." required/>
          1. Nie mam zdania.
         </label>
        </div>
@@ -139,7 +134,7 @@
       <div class="">
        <div class="radio">
         <label class="radio">
-         <input name="attractiveness" type="radio" value="Zdecydowanie atrakcyjna"/>
+         <input name="attractiveness" type="radio" value="Zdecydowanie atrakcyjna" required/>
          1. Zdecydowanie atrakcyjna
         </label>
        </div>
@@ -179,7 +174,7 @@
       <div class="">
        <div class="radio">
         <label class="radio">
-         <input name="color" type="radio" value="Zdecydowanie tak "/>
+         <input name="color" type="radio" value="Zdecydowanie tak " required/>
          1. Zdecydowanie tak
         </label>
        </div>
@@ -219,7 +214,7 @@
       <div class="">
        <div class="form-check form-check-inline">
         <label class="radio">
-         <input name="easy_to_find_info" type="radio" value="Tak"/>
+         <input name="easy_to_find_info" type="radio" value="Tak" required/>
          Tak
         </label>
        </div>
@@ -259,7 +254,7 @@
       <div class="">
        <div class="radio">
         <label class="radio">
-         <input name="nawigation" type="radio" value="bardzo łatwe i intuicyjne"/>
+         <input name="nawigation" type="radio" value="bardzo łatwe i intuicyjne" required/>
          1. bardzo łatwe i intuicyjne
         </label>
        </div>
@@ -307,7 +302,7 @@
       <div class="">
        <div class="form-check form-check-inline">
         <label class="radio">
-         <input name="need_update" type="radio" value="Tak"/>
+         <input name="need_update" type="radio" value="Tak" required/>
          Tak
         </label>
        </div>
@@ -388,7 +383,7 @@
       <div class="">
        <div class="radio">
         <label class="radio">
-         <input name="sex" type="radio" value="Kobieta"/>
+         <input name="sex" type="radio" value="Kobieta" required/>
          Kobieta
         </label>
        </div>
@@ -410,7 +405,7 @@
       <div class="">
        <div class="radio">
         <label class="radio">
-         <input name="age" type="radio" value="18-25"/>
+         <input name="age" type="radio" value="18-25" required/>
          18-25 lat
         </label>
        </div>
@@ -451,7 +446,7 @@
       <div class="">
        <div class="radio">
         <label class="radio">
-         <input name="employee_type" type="radio" value="direct"/>
+         <input name="employee_type" type="radio" value="direct" required/>
          pracownik bezpośrednio produkcyjny ( direct)
         </label>
        </div>
