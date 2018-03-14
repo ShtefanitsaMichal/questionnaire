@@ -23,7 +23,7 @@
      <div class="form-group" name="">
 
       <label class="control-label requiredField">
-       1.  Czy kiedykolwiek  odwiedziłeś (-aś)   stronę internetową SMP ?
+    1.  Czy kiedykolwiek  odwiedziłeś (-aś)   stronę internetową SMP ?
     
       </label>
 
@@ -47,7 +47,7 @@
 
      <div class="form-group ">
       <label class="control-label ">
-      2. Jak często korzystasz ze strony internetowej SMP ?
+    2. Jak często korzystasz ze strony internetowej SMP ?
       </label>
       <div class="">
        <div class="radio">
@@ -81,7 +81,7 @@
 
      <div class="form-group ">
       <label class="control-label ">
-       3.  Jak og&oacute;lnie oceniasz stronę internetową SMP  ?
+    3.  Jak og&oacute;lnie oceniasz stronę internetową SMP  ?
       </label>
       <div class="">
        <div class="radio">
@@ -127,7 +127,7 @@
 
      <div class="form-group ">
       <label class="control-label ">
-       4. Jak oceniasz atrakcyjność strony SMP pod względem grafiki i animacji (banery,  ikony, ikonografiki, zmieniający się kolor, kształt ) ?
+    4. Jak oceniasz atrakcyjność strony SMP pod względem grafiki i animacji (banery,  ikony, ikonografiki, zmieniający się kolor, kształt ) ?
       </label>
       <div class="">
        <div class="radio">
@@ -167,7 +167,7 @@
 
      <div class="form-group ">
       <label class="control-label ">
-       5.  Czy odpowiada Ci kolorystyka strony?
+    5.  Czy odpowiada Ci kolorystyka strony?
       </label>
       <div class="">
        <div class="radio">
@@ -207,7 +207,7 @@
 
      <div class="form-group ">
       <label class="control-label ">
-       6.  Czy udało Ci się odnaleźć informacje, kt&oacute;rych szukałeś ( -aś) ?
+    6.  Czy udało Ci się odnaleźć informacje, kt&oacute;rych szukałeś ( -aś) ?
       </label>
       <div class="">
        <div class="form-check form-check-inline">
@@ -229,7 +229,7 @@
 
      <div class="form-group ">
       <label class="control-label " for="textarea">
-       7. Jakie treści / informacje Twoim zdaniem powinny być zamieszczone na stronie internetowej SMP  ?
+    7. Jakie treści / informacje Twoim zdaniem powinny być zamieszczone na stronie internetowej SMP  ?
       </label>
       <textarea class="form-control" cols="10" id="textarea" name="ness_info" rows="2" maxlength="255"></textarea>
      </div>
@@ -238,7 +238,7 @@
 
      <div class="form-group ">
       <label class="control-label " for="textarea1">
-       8.  Jakiego rodzaju treści,  informacji, wydarzeń  powinno być więcej na stronie internetowej SMP ?
+    8.  Jakiego rodzaju treści,  informacji, wydarzeń  powinno być więcej na stronie internetowej SMP ?
       </label>
       <textarea class="form-control" cols="10" id="textarea1" name="info_type" rows="2" maxlength="255"></textarea>
      </div>
@@ -247,7 +247,7 @@
 
      <div class="form-group ">
       <label class="control-label ">
-       9. Jak oceniasz  spos&oacute;b nawigacji  na stronie SMP Poruszanie się po stronie www SMP jest:
+    9. Jak oceniasz  spos&oacute;b nawigacji  na stronie SMP Poruszanie się po stronie www SMP jest:
       </label>
       <div class="">
        <div class="radio">
@@ -294,7 +294,7 @@
      <div class="form-group ">
       <label class="control-label ">
 
-       10. Czy uważasz, że strona internetowa SMP wymaga modernizacji  w celu zwiększenia atrakcyjności i 
+    10. Czy uważasz, że strona internetowa SMP wymaga modernizacji  w celu zwiększenia atrakcyjności i 
      funkcjonalności, uzasadnij odpowiedź
       </label>
       <div class="">
@@ -322,7 +322,7 @@
     
      <div class="form-group ">
       <label class="control-label requiredField">
-       11 . Jakie media  społecznościowe, Twoim zdaniem, powinny być wykorzystywane na stronie / wspierac funkcjonowanie strony internetowej ?
+    11 . Jakie media  społecznościowe, Twoim zdaniem, powinny być wykorzystywane na stronie / wspierac funkcjonowanie strony internetowej ?
        <span class="asteriskField">
         *
        </span>
@@ -361,8 +361,6 @@
        <div class="checkbox">
         <label class="checkbox">
          <input name="ness_social_media[]" type="checkbox" value="Inne"/>
-
-      
          6. Inne
         </label>
        </div>
