@@ -39,7 +39,7 @@
                                . "`easy_to_find_info`, "
                                . "`ness_info`, "
                                . "`info_type`, "                
-                               . "`nawigation`, "
+                               . "`navigation`, "
                                . "`need_update`, "
                                . "`need_update_text`, "
                                . "`subject`, "
@@ -61,7 +61,7 @@
                                           '$_POST[easy_to_find_info]', 
                                           '$_POST[ness_info]', 
                                           '$_POST[info_type]', 
-                                          '$_POST[nawigation]',
+                                          '$_POST[navigation]',
                                           '$_POST[need_update]',
                                           '$_POST[need_update_text]', 
                                           '$_POST[subject]', 
@@ -90,10 +90,13 @@
     }
 
  ?>
-<!--
- <script type="text/javascript">
+
+ 
+
+
+<script type="text/javascript">
   window.setTimeout(function(){     
         // Move to a new location or you can do something else
         window.location.href = "http://system";
     }, 3000);// czasprzejsćia na strone głowną 
-</script> --> 
+</script>

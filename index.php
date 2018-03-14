@@ -231,7 +231,7 @@
       <label class="control-label " for="textarea">
        7. Jakie treści / informacje Twoim zdaniem powinny być zamieszczone na stronie internetowej SMP  ?
       </label>
-      <textarea class="form-control" cols="10" id="textarea" name="ness_info" rows="5"></textarea>
+      <textarea class="form-control" cols="10" id="textarea" name="ness_info" rows="2" maxlength="255"></textarea>
      </div>
 
     <hr>
@@ -240,7 +240,7 @@
       <label class="control-label " for="textarea1">
        8.  Jakiego rodzaju treści,  informacji, wydarzeń  powinno być więcej na stronie internetowej SMP ?
       </label>
-      <textarea class="form-control" cols="10" id="textarea1" name="info_type" rows="5"></textarea>
+      <textarea class="form-control" cols="10" id="textarea1" name="info_type" rows="2" maxlength="255"></textarea>
      </div>
 
     <hr>
@@ -252,31 +252,31 @@
       <div class="">
        <div class="radio">
         <label class="radio">
-         <input name="nawigation" type="radio" value="bardzo łatwe i intuicyjne" required/>
+         <input name="navigation" type="radio" value="bardzo łatwe i intuicyjne" required/>
          1. bardzo łatwe i intuicyjne
         </label>
        </div>
        <div class="radio">
         <label class="radio">
-         <input name="nawigation" type="radio" value="łatwe "/>
+         <input name="navigation" type="radio" value="łatwe "/>
          2. łatwe
         </label>
        </div>
        <div class="radio">
         <label class="radio">
-         <input name="nawigation" type="radio" value="dość trudne "/>
+         <input name="navigation" type="radio" value="dość trudne "/>
          3.  dość trudne
         </label>
        </div>
        <div class="radio">
         <label class="radio">
-         <input name="nawigation" type="radio" value="trudne "/>
+         <input name="navigation" type="radio" value="trudne "/>
          4. trudne
         </label>
        </div>
        <div class="radio">
         <label class="radio">
-         <input name="nawigation" type="radio" value="Nie mam zdania "/>
+         <input name="navigation" type="radio" value="Nie mam zdania "/>
          5. Nie mam zdania
         </label>
        </div>
@@ -286,7 +286,7 @@
       <label class="control-label " for="subject">
        Jeśli Twoja odpowiedź na pytanie brzmi: &bdquo;dość trudne&rdquo; lub &bdquo;trudne&rdquo; prosimy o opisanie z jakimi trudnościami się spotkałeś (-aś) :
       </label>
-      <input class="form-control" id="subject" name="subject" type="text"/>
+      <input class="form-control" id="subject" name="subject" type="text" maxlength="255"/>
      </div>
 
     <hr>
@@ -313,7 +313,7 @@
       </div>
       <br>
       <div class="form-group">
-        <input class="form-control" id="subject" name="need_update_text" type="text"/>
+        <input class="form-control" id="subject" name="need_update_text" type="text" maxlength="255"/>
       </div>
      </div>
 
@@ -369,7 +369,7 @@
       </div>
      </div>
      <div class="form-group ">
-      <input class="form-control" id="text" name="optional_social_media" placeholder="jakie ?" type="text"/>
+      <input class="form-control" id="text" name="optional_social_media" placeholder="" maxlength="255" type="text"/>
      </div>
 
       <hr>
