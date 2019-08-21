@@ -2,9 +2,9 @@
 	function globals(){global $username, $servername, $password, $dbname, $conn;};
 
 	$servername = "localhost";
-    	$username = "lesson_learned";
+    	$username = "";
     	$password = "";
-    	$dbname = "lesson_learned";
+    	$dbname = "";
 
     	$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password );
 ?>
